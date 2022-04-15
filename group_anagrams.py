@@ -11,6 +11,8 @@ class Solution:
                 dic[sorted_chars].append(word)
             else:
                 dic[sorted_chars] = [word]
-        for s in dic:
-            ans.append(dic[s])
-        return ans
+        # for s in dic:
+        #     ans.append(dic[s])
+        # return ans
+        return [dic[s] for s in dic]
+            
