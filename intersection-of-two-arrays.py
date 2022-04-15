@@ -7,3 +7,11 @@ class Solution:
         set_ans = set1.intersection(nums2)
         list_ans = list(set_ans)
         return list_ans
+
+
+        # 別解
+        # ans = []
+        # for num in nums1:
+        #     if num in nums2 and num not in ans:
+        #         ans.append(num)
+        # return ans
