@@ -12,10 +12,11 @@ class Solution:
         i = 0
         ans = []
         for l in emails_dic["local"]:
-            ans.append(l.join(emails_dic["domain"][i]))
+            ans.append(l + '@' + emails_dic["domain"][i])
             i += 1
         # 集合型にして重複を削除
         ans = set(ans)
         # リスト型に戻す
         ans = list(ans)
+        print(ans)
         return len(ans)
